@@ -17,14 +17,13 @@ function sayHi(){
     console.log("welcome ..."+ userName);
 }
 
-function multiByThree(){
+function conversion(){
     //1. get number from prompt
-    let number = Number(prompt("enter number: "));
-    console.log(number);
+    let temperature = Number(prompt("enter temp in Celcius: "));
+    console.log(temperature);
     //2. multi the number by three
-    let result = number * 3;
+    let result = temperature * 9/5 + 32;
     //3. display the result on the web page
     document.getElementById("total").innerHTML=result;
+    console.log(temperature+" "+"Celcius in Farenheit is"+" "+result)
 }
-
-// create a function that adds up two numbers
